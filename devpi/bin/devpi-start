@@ -1,0 +1,39 @@
+#!/bin/bash
+
+DEBUG_ARG=""
+if [ "${DEBUG}" != "0" ]; then
+  set -x
+  DEBUG_ARG="--debug"
+fi
+
+set -eu
+
+genpasswd() {
+  echo -n "$(< /dev/urandom tr -dc A-Za-z0-9 | head -c32)"
+}
+
+if [[ ! -f ${DEVPISERVER_SERVERDIR}/.nodeinfo ]]; then
+  DEVPISERVER_ROOT_PASSWD=${DEVPISERVER_ROOT_PASSWD-$(genpasswd)}
+  export DEVPISERVER_ROOT
+  devpi-init \
+    --serverdir "${DEVPISERVER_SERVERDIR}" \
+    --root-passwd "${DEVPISERVER_ROOT_PASSWD}"
+  echo "new devpi server created with root password ${DEVPISERVER_ROOT_PASSWD}"
+
+  mkdir -p /devpi/auth
+  touch /devpi/auth/passwd
+
+  BASIC_AUTH_USERS_PASSWD=${BASIC_AUTH_USERS_PASSWD-$(genpasswd)}
+  devpi-http-user-set users "${BASIC_AUTH_USERS_PASSWD}"
+  echo "created user:password combination in /devpi/auth/passwd (optionally used by web container) :users:${BASIC_AUTH_USERS_PASSWD}"
+
+  BASIC_AUTH_CI_PASSWD=${BASIC_AUTH_CI_PASSWD-$(genpasswd)}
+  devpi-http-user-set ci "${BASIC_AUTH_CI_PASSWD}"
+  echo "created user:password combination in /devpi/auth/passwd (optionally used by web container) :ci:${BASIC_AUTH_CI_PASSWD}"
+fi
+
+unset BASIC_AUTH_USERS_PASSWD
+unset BASIC_AUTH_CI_PASSWD
+unset DEVPISERVER_ROOT_PASSWD
+
+exec /usr/local/bin/devpi-server ${DEBUG_ARG} "$@"

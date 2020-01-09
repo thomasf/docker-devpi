@@ -1,0 +1,22 @@
+#!/bin/sh
+if [ "${DEBUG}" != "0" ]; then
+  set -x
+fi
+
+set -eu
+
+mkdir -p /devpi/auth
+touch /devpi/auth/passwd
+
+envsubst '$WEB_SERVER_NAME,$WEB_DEVPI_SERVER,$WEB_PROXY_TIMEOUT,$WEB_CLIENT_MAX_BODY_SIZE' < /etc/nginx/nginx.template.conf > /etc/nginx/nginx.conf
+
+if [ "${WEB_AUTH}" = "0" ]; then
+  truncate --size 0 /etc/nginx/include/auth.conf
+fi
+
+if [ "${DEBUG}" != "0" ]; then
+  cat /etc/nginx/nginx.conf
+  cat /etc/nginx/include/auth.conf
+fi
+
+exec nginx "$@"

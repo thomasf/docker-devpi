@@ -1,0 +1,28 @@
+# docker-compoase file for development
+
+version: '3'
+services:
+  devpi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - dev.env
+    ports:
+    - "3141:3141"
+    volumes:
+       - data:/devpi
+
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+    env_file:
+      - dev.env
+    ports:
+    - "80:80"
+    volumes:
+       - data:/devpi
+
+volumes:
+  data:
