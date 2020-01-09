@@ -2,19 +2,36 @@
 
 A pair of containers for running a devpi server
 
-The container images on docker hub are
-[thomasf/devpi](https://hub.docker.com/repository/docker/thomasf/devpi/tags)
-and
-[thomasf/devpi-web](https://hub.docker.com/repository/docker/thomasf/devpi-web/tags)
+The container images on docker hub are:
 
-Both container images will be released together so every tag will exist for both images.
+- [thomasf/devpi](https://hub.docker.com/repository/docker/thomasf/devpi/tags)
+- [thomasf/devpi-web](https://hub.docker.com/repository/docker/thomasf/devpi-web/tags)
+
+Both are built from the same git repository:
+
+- [github.com/thomasf/docker-devpi](https://github.com/thomasf/docker-devpi)
+
+Both container images will be released together, every tag will exist for both images.
 
 The tags will primarily match with
 [devpi-server](https://pypi.org/project/devpi-server/) versions, an hyphenated
 version suffix might be added for interim releases that updates any other
-depdencies (5.3.1-1).
+depdencies (example 1.2.3-1). New releases of
+[devpi-web](https://pypi.org/project/devpi-web/),
+[devpi-client](https://pypi.org/project/devpi-client/),
+[nginx](https://hub.docker.com/_/nginx) or
+[python](https://hub.docker.com/_/python) might cause an hyphenated release to
+be made.
 
-Never use :latest in production!
+Both containers needs to have access to the data under `/devpi/` so the same
+directory needs to be mounted in both containers.
+
+It is possible to use `thomas/devpi` without `thomasf/devpi-web` as well but if
+you have a lot of requests you probably want something similar that offloads
+the wsgi server from serving cached files.
+
+An example production like docker-compose confiugration is available here as
+[docker-compose.yml](docker-compose.yml).
 
 # enviromnent variable options
 
