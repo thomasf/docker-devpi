@@ -1,9 +1,11 @@
 #!/bin/bash
 
 DEBUG_ARG=""
+PIP_Q="-q"
 if [ "${DEBUG}" != "0" ]; then
   set -x
   DEBUG_ARG="--debug"
+  PIP_Q=""
 fi
 
 set -eu
@@ -11,6 +13,10 @@ set -eu
 genpasswd() {
   echo -n "$(< /dev/urandom tr -dc A-Za-z0-9 | head -c32)"
 }
+
+if [ "${DEVPI_PLUGINS}" != "0" ]; then
+  pip ${PIP_Q} install --no-index --no-cache --find-links /wheel ${DEVPI_PLUGINS}
+fi
 
 if [[ ! -f ${DEVPISERVER_SERVERDIR}/.nodeinfo ]]; then
   DEVPISERVER_ROOT_PASSWD=${DEVPISERVER_ROOT_PASSWD-$(genpasswd)}

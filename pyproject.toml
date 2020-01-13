@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "docker-devpi"
+version = "0"
+description = "manages dependency versions"
+authors = ["Thomas Frössman <thomasf@jossystem.se>"]
+
+[tool.poetry.dependencies]
+# core
+python = "^3.7"
+devpi-server = "*"
+devpi-web = "*"
+devpi-client = "*"
+# plugins
+devpi-lockdown = {version = "*", optional = true}
+devpi-findlinks = {version = "*", optional = true}
+devpi-pr = {version = "*", optional = true}
+devpi-ldap = {version = "*", optional = true}
+devpi-jenkins = {version = "*", optional = true}
+
+
+[tool.poetry.extras]
+plugins = ["devpi-lockdown", "devpi-findlinks", "devpi-pr", "devpi-ldap", "devpi-jenkins"]

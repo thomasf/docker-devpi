@@ -73,6 +73,16 @@ The password for the devpi root user, if it's not set it will be generated and
 written to the container stdout on the initial start up when the server data is
 created.
 
+**DEVPI_PLUGINS**
+Enable plugins, space separated list, defaults to none
+
+- [devpi-lockdown](https://pypi.org/project/devpi-lockdown/)
+- [devpi-findlinks](https://pypi.org/project/devpi-findlinks/)
+- [devpi-pr](https://pypi.org/project/devpi-pr/)
+- [devpi-ldap](https://pypi.org/project/devpi-ldap/)
+- [devpi-jenkins](https://pypi.org/project/devpi-jenkins/)
+
+
 **DEVPISERVER_.....**
 
 All other environment variables will be passed to devpi server.
