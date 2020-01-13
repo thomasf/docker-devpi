@@ -11,12 +11,22 @@ devpi-server = "*"
 devpi-web = "*"
 devpi-client = "*"
 # plugins
-devpi-lockdown = {version = "*", optional = true}
+devpi-constrained = {version = "*", optional = true}
 devpi-findlinks = {version = "*", optional = true}
-devpi-pr = {version = "*", optional = true}
-devpi-ldap = {version = "*", optional = true}
 devpi-jenkins = {version = "*", optional = true}
+devpi-ldap = {version = "*", optional = true}
+devpi-lockdown = {version = "*", optional = true}
+devpi-postgresql = {version = "*", optional = true}
+devpi-pr = {version = "*", optional = true}
 
 
 [tool.poetry.extras]
-plugins = ["devpi-lockdown", "devpi-findlinks", "devpi-pr", "devpi-ldap", "devpi-jenkins"]
+plugins = [
+        "devpi-constrained",
+        "devpi-findlinks", 
+        "devpi-jenkins", 
+        "devpi-ldap", 
+        "devpi-lockdown", 
+        "devpi-postgresql", 
+        "devpi-pr", 
+        ]

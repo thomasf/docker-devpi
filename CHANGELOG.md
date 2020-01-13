@@ -1,4 +1,10 @@
-There will only be release notes when something changes that is is not upstream devpi changes.
+note: There will only be release notes when something changes that is is not upstream devpi changes.
+
+<hr />
+
+## unreleased
+
+added devpi-postgresql and devpi-constrained plugins
 
 ## 5.3.1-1
 

@@ -76,11 +76,13 @@ created.
 **DEVPI_PLUGINS**
 Enable plugins, space separated list, defaults to none
 
-- [devpi-lockdown](https://pypi.org/project/devpi-lockdown/)
+- [devpi-constrained](https://pypi.org/project/devpi-constrained/)
 - [devpi-findlinks](https://pypi.org/project/devpi-findlinks/)
-- [devpi-pr](https://pypi.org/project/devpi-pr/)
-- [devpi-ldap](https://pypi.org/project/devpi-ldap/)
 - [devpi-jenkins](https://pypi.org/project/devpi-jenkins/)
+- [devpi-ldap](https://pypi.org/project/devpi-ldap/)
+- [devpi-lockdown](https://pypi.org/project/devpi-lockdown/)
+- [devpi-postgresql](https://pypi.org/project/devpi-postgresql/)
+- [devpi-pr](https://pypi.org/project/devpi-pr/)
 
 
 **DEVPISERVER_.....**

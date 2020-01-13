@@ -179,6 +179,18 @@ requests = ">=2.3.0"
 
 [[package]]
 category = "main"
+description = "\"devpi-constrained: an index for devpi-server that provides a constrained list of packages from it's bases\""
+name = "devpi-constrained"
+optional = true
+python-versions = ">=3.5"
+version = "1.0.0"
+
+[package.dependencies]
+devpi-common = "*"
+devpi-server = ">=5.1.0"
+
+[[package]]
+category = "main"
 description = "devpi-findlinks: find-links view for devpi-server"
 name = "devpi-findlinks"
 optional = true
@@ -222,6 +234,18 @@ version = "1.0.1"
 
 [package.dependencies]
 devpi-web = "*"
+
+[[package]]
+category = "main"
+description = "devpi-postgresql: a PostgreSQL storage backend for devpi-server"
+name = "devpi-postgresql"
+optional = true
+python-versions = ">=3.4"
+version = "1.0.0"
+
+[package.dependencies]
+devpi-server = ">=3.0.0.dev2"
+pg8000 = "*"
 
 [[package]]
 category = "main"
@@ -424,6 +448,17 @@ version = "2.0.1"
 [package.extras]
 docs = ["Sphinx (>=1.7.5)", "pylons-sphinx-themes"]
 paste = ["paste"]
+
+[[package]]
+category = "main"
+description = "PostgreSQL interface library"
+name = "pg8000"
+optional = true
+python-versions = ">=3.5"
+version = "1.13.2"
+
+[package.dependencies]
+scramp = "1.1.0"
 
 [[package]]
 category = "main"
@@ -659,6 +694,14 @@ version = "0.2.0"
 
 [[package]]
 category = "main"
+description = "An implementation of the SCRAM protocol."
+name = "scramp"
+optional = true
+python-versions = ">=3.5"
+version = "1.1.0"
+
+[[package]]
+category = "main"
 description = "Python 2 and 3 compatibility utilities"
 name = "six"
 optional = false
@@ -852,10 +895,10 @@ test = ["zope.event"]
 testing = ["coverage", "nose", "zope.event"]
 
 [extras]
-plugins = ["devpi-lockdown", "devpi-findlinks", "devpi-pr", "devpi-ldap", "devpi-jenkins"]
+plugins = ["devpi-constrained", "devpi-findlinks", "devpi-jenkins", "devpi-ldap", "devpi-lockdown", "devpi-postgresql", "devpi-pr"]
 
 [metadata]
-content-hash = "e51533147233a4652921cd61ab289ad9dcb09f67971cd79ea3e06cdd25a813b2"
+content-hash = "d4c871d3dc586261552cbb30fb025a9d9f522611832eed2b26a375aab5fc526a"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -996,6 +1039,10 @@ devpi-common = [
     {file = "devpi-common-3.4.0.tar.gz", hash = "sha256:10cbe52a5c94eafe619a8c65601ee7dec31085609dffb171062258676f12d4dd"},
     {file = "devpi_common-3.4.0-py2.py3-none-any.whl", hash = "sha256:eca6250a97c14a836ce7f61d424b4cc43bca5a63298fb6b8ffe432640d1b7492"},
 ]
+devpi-constrained = [
+    {file = "devpi-constrained-1.0.0.tar.gz", hash = "sha256:39ef575a8b93ba15d8cc386eeee69b9406b83d4066ca7a3fde6711e3b9bdfa92"},
+    {file = "devpi_constrained-1.0.0-py3-none-any.whl", hash = "sha256:d7e03ccd72871ba6bcdf80a8972f8239db33928cc644ee9584089358330f089b"},
+]
 devpi-findlinks = [
     {file = "devpi-findlinks-2.0.1.tar.gz", hash = "sha256:fa2ce54fe2f71d10593fafe34c89aec90629d61863f36c6b1e4c52c5dce0b41b"},
     {file = "devpi_findlinks-2.0.1-py2-none-any.whl", hash = "sha256:919b8ecd4a5ea8c8140c41914ad3bcc52242a6db0e18f7cdad9d6f98e35f0b0a"},
@@ -1010,6 +1057,10 @@ devpi-ldap = [
 devpi-lockdown = [
     {file = "devpi-lockdown-1.0.1.tar.gz", hash = "sha256:5bd44e60c97be48d59193212d65e4cb30d777cea9de23891b4285ed1ecc592fe"},
     {file = "devpi_lockdown-1.0.1-py2.py3-none-any.whl", hash = "sha256:daab2af8511a530aad9ca25682b293b9db2144f20a0b51f886b8730c472115da"},
+]
+devpi-postgresql = [
+    {file = "devpi-postgresql-1.0.0.tar.gz", hash = "sha256:fca04c61399a335bd391ceb34e99683388f23db7f7aca65722b920c2f9f9cef1"},
+    {file = "devpi_postgresql-1.0.0-py3-none-any.whl", hash = "sha256:87fd55e71d927328f9868c9a99b039d27d7bf647b42e2aadb6000b979347a1f7"},
 ]
 devpi-pr = [
     {file = "devpi-pr-1.0.0.tar.gz", hash = "sha256:64ac2fd8eee1973e36ed429e4117d2e87169c7419ca1cc42bba1815c984dd4e2"},
@@ -1074,6 +1125,10 @@ passlib = [
 pastedeploy = [
     {file = "PasteDeploy-2.0.1-py2.py3-none-any.whl", hash = "sha256:fe53697ec2754703096b75d0ba29112b0590b4ce46726fe4f9408fd006e4eefc"},
     {file = "PasteDeploy-2.0.1.tar.gz", hash = "sha256:d423fb9d51fdcf853aa4ff43ac7ec469b643ea19590f67488122d6d0d772350a"},
+]
+pg8000 = [
+    {file = "pg8000-1.13.2-py3-none-any.whl", hash = "sha256:e4c2b173178ba41bba19366b9cdeced91fecec2caf31c7ece719138633213cca"},
+    {file = "pg8000-1.13.2.tar.gz", hash = "sha256:eebcb4176a7e407987e525a07454882f611985e0becb2b73f76efb93bbdc0aab"},
 ]
 pkginfo = [
     {file = "pkginfo-1.5.0.1-py2.py3-none-any.whl", hash = "sha256:a6d9e40ca61ad3ebd0b72fbadd4fba16e4c0e4df0428c041e01e06eb6ee71f32"},
@@ -1181,6 +1236,10 @@ requests = [
     {file = "ruamel.yaml.clib-0.2.0-cp37-cp37m-win_amd64.whl", hash = "sha256:b1b7fcee6aedcdc7e62c3a73f238b3d080c7ba6650cd808bce8d7761ec484070"},
     {file = "ruamel.yaml.clib-0.2.0-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:be018933c2f4ee7de55e7bd7d0d801b3dfb09d21dad0cce8a97995fd3e44be30"},
     {file = "ruamel.yaml.clib-0.2.0.tar.gz", hash = "sha256:b66832ea8077d9b3f6e311c4a53d06273db5dc2db6e8a908550f3c14d67e718c"},
+]
+scramp = [
+    {file = "scramp-1.1.0-py3-none-any.whl", hash = "sha256:e09d2a9be5adeb94cbeb56fc54a61fc5f5b6e140e679b2b60d1f7a8d6478d906"},
+    {file = "scramp-1.1.0.tar.gz", hash = "sha256:475aa6296deb2737b86e9df9098e8eca0f30c8ad1cc0a8adadb99ef012a5ceba"},
 ]
 six = [
     {file = "six-1.13.0-py2.py3-none-any.whl", hash = "sha256:1f1b7d42e254082a9db6279deae68afb421ceba6158efa6131de7b3003ee93fd"},
