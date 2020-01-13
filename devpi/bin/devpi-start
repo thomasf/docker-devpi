@@ -15,7 +15,10 @@ genpasswd() {
 }
 
 if [ "${DEVPI_PLUGINS}" != "0" ]; then
-  pip ${PIP_Q} install --no-index --no-cache --find-links /wheel ${DEVPI_PLUGINS}
+  if ! pip ${PIP_Q} install --no-index --no-cache --find-links /wheel ${DEVPI_PLUGINS}; then
+    echo "error installing plugins"
+    exit 1
+  fi
 fi
 
 if [[ ! -f ${DEVPISERVER_SERVERDIR}/.nodeinfo ]]; then
