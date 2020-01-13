@@ -2,9 +2,9 @@ note: There will only be release notes when something changes that is is not ups
 
 <hr />
 
-## unreleased
+## 5.3.1-3
 
-added devpi-postgresql and devpi-constrained plugins
+- added devpi-postgresql and devpi-constrained plugins
 
 ## 5.3.1-1
 
