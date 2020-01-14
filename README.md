@@ -94,7 +94,7 @@ DEVPISERVER_ and dashes replaced by underscores. For example --restrict-modify
 becomes DEVPISERVER_RESTRICT_MODIFY.
 
 At the time of writing this is all of the devpi-server options (will probably
-not be kept up to date),
+not be kept up to date, installation of plugins also adds more options).
 
 ```
 optional arguments:
@@ -229,6 +229,16 @@ Set this to anything but 0 to add http basic auth from htpasswd file
 **WEB_SERVER_NAME=localhost**
 
 Set the name the public server name that will be respoded to.
+
+**WEB_DEVPI_SERVER=devpi:3141**
+
+URL where the web server will proxy request to the devpi-server.
+
+**WEB_DEVPI_LOCKDOWN=0**
+
+Set this to anything but 0 to enable support for the `devpi-lockdown` plugin in
+the web server. It is not allowed to have `WEB_DEVPI_LOCKDOWN` and `WEB_AUTH`
+enabled at the same time.
 
 **WEB_CLIENT_MAX_BODY_SIZE=64M**
 

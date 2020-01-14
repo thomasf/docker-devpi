@@ -2,6 +2,11 @@ note: There will only be release notes when something changes that is is not ups
 
 <hr />
 
+## unreleased
+
+- added WEB_DEVPI_LOCKDOWN setting for devpi-web container image to enable
+  usage of the devpi-lockdown plugin.
+
 ## 5.3.1-3
 
 - added devpi-postgresql and devpi-constrained plugins

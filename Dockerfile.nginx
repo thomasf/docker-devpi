@@ -4,6 +4,7 @@ copy /nginx/bin/ /usr/bin/
 cmd /usr/bin/nginx-start
 env DEBUG=0 \
     WEB_AUTH=0 \
+    WEB_DEVPI_LOCKDOWN=0 \
     WEB_SERVER_NAME=localhost \
     WEB_DEVPI_SERVER=devpi:3141 \
     WEB_CLIENT_MAX_BODY_SIZE=64M \
