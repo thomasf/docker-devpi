@@ -4,6 +4,7 @@ version: '3'
 services:
   devpi:
     image: thomasf/devpi:latest
+    restart: on-failure
     environment:
       # - DEBUG=1
       - DEVPISERVER_ROOT_PASSWD=my-UNSECURE-pw
