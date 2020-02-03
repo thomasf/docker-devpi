@@ -241,7 +241,7 @@ description = "devpi-postgresql: a PostgreSQL storage backend for devpi-server"
 name = "devpi-postgresql"
 optional = true
 python-versions = ">=3.4"
-version = "1.0.0"
+version = "1.1.0"
 
 [package.dependencies]
 devpi-server = ">=3.0.0.dev2"
@@ -270,7 +270,7 @@ description = "devpi-server: reliable private and pypi.org caching server"
 name = "devpi-server"
 optional = false
 python-versions = "*"
-version = "5.3.1"
+version = "5.4.0"
 
 [package.dependencies]
 appdirs = "*"
@@ -295,7 +295,7 @@ description = "devpi-web: a web view for devpi-server"
 name = "devpi-web"
 optional = false
 python-versions = ">=3.4"
-version = "4.0.1"
+version = "4.0.2"
 
 [package.dependencies]
 Whoosh = "<3"
@@ -369,7 +369,7 @@ marker = "python_version < \"3.8\""
 name = "importlib-metadata"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
-version = "1.4.0"
+version = "1.5.0"
 
 [package.dependencies]
 zipp = ">=0.5"
@@ -434,7 +434,7 @@ description = "Load, configure, and compose WSGI applications and servers"
 name = "pastedeploy"
 optional = false
 python-versions = "*"
-version = "2.0.1"
+version = "2.1.0"
 
 [package.extras]
 docs = ["Sphinx (>=1.7.5)", "pylons-sphinx-themes"]
@@ -663,7 +663,7 @@ description = "ruamel.yaml is a YAML parser/emitter that supports roundtrip pres
 name = "ruamel.yaml"
 optional = false
 python-versions = "*"
-version = "0.16.6"
+version = "0.16.7"
 
 [package.dependencies]
 [package.dependencies."ruamel.yaml.clib"]
@@ -804,7 +804,7 @@ description = "Waitress WSGI server"
 name = "waitress"
 optional = false
 python-versions = "*"
-version = "1.4.2"
+version = "1.4.3"
 
 [package.extras]
 docs = ["Sphinx (>=1.8.1)", "docutils", "pylons-sphinx-themes (>=1.0.9)"]
@@ -1047,20 +1047,20 @@ devpi-lockdown = [
     {file = "devpi_lockdown-1.0.1-py2.py3-none-any.whl", hash = "sha256:daab2af8511a530aad9ca25682b293b9db2144f20a0b51f886b8730c472115da"},
 ]
 devpi-postgresql = [
-    {file = "devpi-postgresql-1.0.0.tar.gz", hash = "sha256:fca04c61399a335bd391ceb34e99683388f23db7f7aca65722b920c2f9f9cef1"},
-    {file = "devpi_postgresql-1.0.0-py3-none-any.whl", hash = "sha256:87fd55e71d927328f9868c9a99b039d27d7bf647b42e2aadb6000b979347a1f7"},
+    {file = "devpi-postgresql-1.1.0.tar.gz", hash = "sha256:a39d4040735e7d61cf51eac21f6c1d8117b82b2eb9998581ba6bb5fd108416b2"},
+    {file = "devpi_postgresql-1.1.0-py3-none-any.whl", hash = "sha256:5483b71e8dd9ebd6ace55ade6c0170a6550703c86ea25f512d5f0efbc763c725"},
 ]
 devpi-pr = [
     {file = "devpi-pr-1.0.0.tar.gz", hash = "sha256:64ac2fd8eee1973e36ed429e4117d2e87169c7419ca1cc42bba1815c984dd4e2"},
     {file = "devpi_pr-1.0.0-py2.py3-none-any.whl", hash = "sha256:ba2885c820d0dbabf19ec61ac28c6d928778c148b7cf16abf8627ae19118e6e6"},
 ]
 devpi-server = [
-    {file = "devpi-server-5.3.1.tar.gz", hash = "sha256:6b29663c0060eb4cfbc63564a623f92d0d2b307f13710c6781856f51558b874f"},
-    {file = "devpi_server-5.3.1-py2.py3-none-any.whl", hash = "sha256:f81bcb2073826b47e388f0d17f208ca6ce239a9dad592215b1aed2d19fa9416d"},
+    {file = "devpi-server-5.4.0.tar.gz", hash = "sha256:0feb15f6a732073e0396d1e5b1b58aa73c0bf5bdb8cf7457db9311d5de7a4c05"},
+    {file = "devpi_server-5.4.0-py2.py3-none-any.whl", hash = "sha256:973375f22889fd40c066b6e91e647959a49a37c73546ea90031b13c91db86153"},
 ]
 devpi-web = [
-    {file = "devpi-web-4.0.1.tar.gz", hash = "sha256:6e4f5cfb3f9367ac7ab825fffbc9bccebe4893e149750c9448bb23257cc4ea0c"},
-    {file = "devpi_web-4.0.1-py3-none-any.whl", hash = "sha256:3c1a0db9c3292f97615ccb80f1f50ddd4d139419a1351c5b587f7d7b8e32a52c"},
+    {file = "devpi-web-4.0.2.tar.gz", hash = "sha256:65f60e3f9ceda39d790cc4792ab8fa04daf2cfe304e681f5cf131e9edcd45896"},
+    {file = "devpi_web-4.0.2-py3-none-any.whl", hash = "sha256:a73f8ffb645630bd6efbb26d104b7e0c3b12c938cb8c34c446ec2648413986d6"},
 ]
 docutils = [
     {file = "docutils-0.16-py2.py3-none-any.whl", hash = "sha256:0c5b78adfbf7762415433f5515cd5c9e762339e23369dbe8000d84a4bf4ab3af"},
@@ -1083,8 +1083,8 @@ idna = [
     {file = "idna-2.8.tar.gz", hash = "sha256:c357b3f628cf53ae2c4c05627ecc484553142ca23264e593d327bcde5e9c3407"},
 ]
 importlib-metadata = [
-    {file = "importlib_metadata-1.4.0-py2.py3-none-any.whl", hash = "sha256:bdd9b7c397c273bcc9a11d6629a38487cd07154fa255a467bf704cd2c258e359"},
-    {file = "importlib_metadata-1.4.0.tar.gz", hash = "sha256:f17c015735e1a88296994c0697ecea7e11db24290941983b08c9feb30921e6d8"},
+    {file = "importlib_metadata-1.5.0-py2.py3-none-any.whl", hash = "sha256:b97607a1a18a5100839aec1dc26a1ea17ee0d93b20b0f008d80a5a050afb200b"},
+    {file = "importlib_metadata-1.5.0.tar.gz", hash = "sha256:06f5b3a99029c7134207dd882428a66992a9de2bef7c2b699b5641f9886c3302"},
 ]
 itsdangerous = [
     {file = "itsdangerous-1.1.0-py2.py3-none-any.whl", hash = "sha256:b12271b2047cb23eeb98c8b5622e2e5c5e9abd9784a153e9d8ef9cb4dd09d749"},
@@ -1107,8 +1107,8 @@ passlib = [
     {file = "passlib-1.7.2.tar.gz", hash = "sha256:8d666cef936198bc2ab47ee9b0410c94adf2ba798e5a84bf220be079ae7ab6a8"},
 ]
 pastedeploy = [
-    {file = "PasteDeploy-2.0.1-py2.py3-none-any.whl", hash = "sha256:fe53697ec2754703096b75d0ba29112b0590b4ce46726fe4f9408fd006e4eefc"},
-    {file = "PasteDeploy-2.0.1.tar.gz", hash = "sha256:d423fb9d51fdcf853aa4ff43ac7ec469b643ea19590f67488122d6d0d772350a"},
+    {file = "PasteDeploy-2.1.0-py2.py3-none-any.whl", hash = "sha256:bc6578735a32c77435a3e0769426983d3df6dc53a7229290c495ec10aefb81a5"},
+    {file = "PasteDeploy-2.1.0.tar.gz", hash = "sha256:e7559878b6e92023041484be9bcb6d767cf4492fc3de7257a5dae76a7cc11a9b"},
 ]
 pg8000 = [
     {file = "pg8000-1.13.2-py3-none-any.whl", hash = "sha256:e4c2b173178ba41bba19366b9cdeced91fecec2caf31c7ece719138633213cca"},
@@ -1197,8 +1197,8 @@ requests = [
     {file = "requests-2.22.0.tar.gz", hash = "sha256:11e007a8a2aa0323f5a921e9e6a2d7e4e67d9877e85773fba9ba6419025cbeb4"},
 ]
 "ruamel.yaml" = [
-    {file = "ruamel.yaml-0.16.6-py2.py3-none-any.whl", hash = "sha256:91d6bfe4fce401a00388deb0f5d29e10d2d3683a868c1113ae16bbc351ceb6a4"},
-    {file = "ruamel.yaml-0.16.6.tar.gz", hash = "sha256:966e5a049eebf011c90424b9ec7dab6358cee8de0907354b27a27f20a8c4c2ec"},
+    {file = "ruamel.yaml-0.16.7-py2.py3-none-any.whl", hash = "sha256:dba517a7e330b6caf476b757022d21efa13c32694bfba1e057ce59a374f18f0a"},
+    {file = "ruamel.yaml-0.16.7.tar.gz", hash = "sha256:9d59fa89985c55155d35c886663e357813404ae8f94638cb673135b8c8c1a7c7"},
 ]
 "ruamel.yaml.clib" = [
     {file = "ruamel.yaml.clib-0.2.0-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:9c6d040d0396c28d3eaaa6cb20152cb3b2f15adf35a0304f4f40a3cf9f1d2448"},
@@ -1262,8 +1262,8 @@ virtualenv = [
     {file = "virtualenv-16.7.9.tar.gz", hash = "sha256:0d62c70883c0342d59c11d0ddac0d954d0431321a41ab20851facf2b222598f3"},
 ]
 waitress = [
-    {file = "waitress-1.4.2-py2.py3-none-any.whl", hash = "sha256:cbf1c62fc41393a6f27cb78483f8f6e252630a3598984668244b7bf4e35856f1"},
-    {file = "waitress-1.4.2.tar.gz", hash = "sha256:67a60a376f0eb335ed88967c42b73983a58d66a2a72eb9009a42725f7453b142"},
+    {file = "waitress-1.4.3-py2.py3-none-any.whl", hash = "sha256:77ff3f3226931a1d7d8624c5371de07c8e90c7e5d80c5cc660d72659aaf23f38"},
+    {file = "waitress-1.4.3.tar.gz", hash = "sha256:045b3efc3d97c93362173ab1dfc159b52cfa22b46c3334ffc805dbdbf0e4309e"},
 ]
 webencodings = [
     {file = "webencodings-0.5.1-py2.py3-none-any.whl", hash = "sha256:a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78"},
