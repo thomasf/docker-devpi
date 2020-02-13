@@ -93,6 +93,18 @@ The command line option name needs to be changed to uppercase, prefixed with
 DEVPISERVER_ and dashes replaced by underscores. For example --restrict-modify
 becomes DEVPISERVER_RESTRICT_MODIFY.
 
+**DEVPISERVER_OUTSIDE_URL**
+
+If you expose the devpi server on a nonstandard port through a web server (like
+http://example.com:3141)  you need to set this option, otherwise devpi will not
+build it's urls correctly and you won't be able to log in using the devpi cli
+client.
+
+Example env var: DEVPISERVER_OUTSIDE_URL=http://devpi.example.com:3141
+
+
+**devpi-server options**
+
 At the time of writing this is all of the devpi-server options (will probably
 not be kept up to date, installation of plugins also adds more options).
 
