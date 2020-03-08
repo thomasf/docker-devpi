@@ -6,7 +6,7 @@ authors = ["Thomas Frössman <thomasf@jossystem.se>"]
 
 [tool.poetry.dependencies]
 # core
-python = "^3.7"
+python = "^3.8"
 devpi-server = "*"
 devpi-web = "*"
 devpi-client = "*"
