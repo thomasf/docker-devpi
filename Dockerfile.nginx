@@ -1,4 +1,4 @@
-from nginx:1.17.8
+from nginx:1.17.9
 copy /nginx/etc/ /etc/nginx/
 copy /nginx/bin/ /usr/bin/
 cmd /usr/bin/nginx-start
