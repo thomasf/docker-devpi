@@ -2,9 +2,9 @@ apipkg==1.5
 appdirs==1.4.3
 argon2-cffi==19.2.0
 attrs==19.3.0
-beautifulsoup4==4.8.2
+beautifulsoup4==4.9.0
 bleach==3.1.4
-certifi==2020.4.5
+certifi==2020.4.5.1
 cffi==1.14.0
 chameleon==3.7.0
 chardet==3.0.4
@@ -34,7 +34,7 @@ pluggy==0.13.1
 py==1.8.1
 pycparser==2.20
 pygments==2.6.1
-pyparsing==2.4.6
+pyparsing==2.4.7
 pyramid==1.10.4
 pyramid-chameleon==0.3
 python-dateutil==2.8.1
@@ -44,7 +44,7 @@ requests==2.23.0
 ruamel.yaml==0.16.10
 ruamel.yaml.clib==0.2.0; platform_python_implementation == "CPython" and python_version < "3.9"
 six==1.14.0
-soupsieve==2.0
+soupsieve==1.9.5
 strictyaml==1.0.6
 toml==0.10.0
 tox==3.14.6
@@ -57,4 +57,4 @@ webencodings==0.5.1
 webob==1.8.6
 whoosh==2.7.4
 zope.deprecation==4.4.0
-zope.interface==5.0.2
+zope.interface==5.1.0
