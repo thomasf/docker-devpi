@@ -241,12 +241,12 @@ category = "main"
 description = "devpi-postgresql: a PostgreSQL storage backend for devpi-server"
 name = "devpi-postgresql"
 optional = true
-python-versions = ">=3.4"
-version = "1.1.0"
+python-versions = ">=3.5"
+version = "2.0.0"
 
 [package.dependencies]
 devpi-server = ">=3.0.0.dev2"
-pg8000 = "*"
+pg8000 = ">=1.14.0"
 
 [[package]]
 category = "main"
@@ -1030,8 +1030,8 @@ devpi-lockdown = [
     {file = "devpi_lockdown-1.0.1-py2.py3-none-any.whl", hash = "sha256:daab2af8511a530aad9ca25682b293b9db2144f20a0b51f886b8730c472115da"},
 ]
 devpi-postgresql = [
-    {file = "devpi-postgresql-1.1.0.tar.gz", hash = "sha256:a39d4040735e7d61cf51eac21f6c1d8117b82b2eb9998581ba6bb5fd108416b2"},
-    {file = "devpi_postgresql-1.1.0-py3-none-any.whl", hash = "sha256:5483b71e8dd9ebd6ace55ade6c0170a6550703c86ea25f512d5f0efbc763c725"},
+    {file = "devpi-postgresql-2.0.0.tar.gz", hash = "sha256:28c1365c6d471bd1fcecc51d2cbaed9aaa08540c5ec2a429df92743b5270b187"},
+    {file = "devpi_postgresql-2.0.0-py3-none-any.whl", hash = "sha256:ec5c5a9c0ceaebbd907d1c47f7183d1f7826fd927ed4e110033bd880f38ffafa"},
 ]
 devpi-pr = [
     {file = "devpi-pr-1.0.0.tar.gz", hash = "sha256:64ac2fd8eee1973e36ed429e4117d2e87169c7419ca1cc42bba1815c984dd4e2"},
