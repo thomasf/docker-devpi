@@ -23,6 +23,10 @@ depdencies (example 1.2.3-1). New releases of
 [python](https://hub.docker.com/_/python) might cause an hyphenated release to
 be made.
 
+The `:latest` tag is just the latest master branch build, not correspond to the
+latest release tag. It might be totally untested. Use the release build tags
+for production deployments.
+
 Both containers needs to have access to the data under `/devpi/` so the same
 directory needs to be mounted in both containers.
 
