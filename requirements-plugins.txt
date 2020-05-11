@@ -1,12 +1,12 @@
 apipkg==1.5
-appdirs==1.4.3
-argon2-cffi==19.2.0
+appdirs==1.4.4
+argon2-cffi==20.1.0
 attrs==19.3.0
 beautifulsoup4==4.9.0
 bleach==3.1.5
 certifi==2020.4.5.1
 cffi==1.14.0
-chameleon==3.7.0
+chameleon==3.7.1
 chardet==3.0.4
 check-manifest==0.42
 cmarkgfm==0.4.2
@@ -21,8 +21,8 @@ devpi-ldap==1.2.2
 devpi-lockdown==1.0.1
 devpi-postgresql==2.0.0
 devpi-pr==1.0.0
-devpi-server==5.4.1
-devpi-web==4.0.3
+devpi-server==5.5.0
+devpi-web==4.0.4
 distlib==0.3.0
 docutils==0.16
 execnet==1.7.1
