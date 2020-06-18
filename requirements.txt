@@ -6,7 +6,7 @@ beautifulsoup4==4.9.1
 bleach==3.1.5
 certifi==2020.4.5.2
 cffi==1.14.0
-chameleon==3.7.2
+chameleon==3.7.4
 chardet==3.0.4
 check-manifest==0.42
 cmarkgfm==0.4.2
@@ -32,7 +32,7 @@ pkginfo==1.5.0.1
 plaster==1.0
 plaster-pastedeploy==0.7
 pluggy==0.13.1
-py==1.8.1
+py==1.8.2
 pycparser==2.20
 pygments==2.6.1
 pyparsing==2.4.7
@@ -41,7 +41,7 @@ pyramid-chameleon==0.3
 python-dateutil==2.8.1
 readme-renderer==26.0
 repoze.lru==0.7
-requests==2.23.0
+requests==2.24.0
 ruamel.yaml==0.16.10
 ruamel.yaml.clib==0.2.0; platform_python_implementation == "CPython" and python_version < "3.9"
 six==1.15.0
@@ -52,7 +52,7 @@ tox==3.15.2
 translationstring==1.3
 urllib3==1.25.9
 venusian==3.0.0
-virtualenv==20.0.21
+virtualenv==20.0.23
 waitress==1.4.4
 webencodings==0.5.1
 webob==1.8.6
