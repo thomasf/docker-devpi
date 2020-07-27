@@ -5,7 +5,7 @@ attrs==19.3.0
 beautifulsoup4==4.9.1
 bleach==3.1.5
 certifi==2020.6.20
-cffi==1.14.0
+cffi==1.14.1
 chameleon==3.8.1
 chardet==3.0.4
 check-manifest==0.42
@@ -36,7 +36,7 @@ packaging==20.4
 passlib==1.7.2
 pastedeploy==2.1.0
 pep517==0.8.2
-pg8000==1.16.1
+pg8000==1.16.3
 pkginfo==1.5.0.1
 plaster==1.0
 plaster-pastedeploy==0.7
