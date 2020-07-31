@@ -48,7 +48,7 @@ six==1.15.0
 soupsieve==1.9.6
 strictyaml==1.0.6
 toml==0.10.1
-tox==3.18.0
+tox==3.18.1
 translationstring==1.4
 urllib3==1.25.10
 venusian==3.0.0
