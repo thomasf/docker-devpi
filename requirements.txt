@@ -46,13 +46,13 @@ ruamel.yaml==0.16.10
 ruamel.yaml.clib==0.2.0; platform_python_implementation == "CPython" and python_version < "3.9"
 six==1.15.0
 soupsieve==1.9.6
-strictyaml==1.0.6
+strictyaml==1.0.7
 toml==0.10.1
-tox==3.18.1
+tox==3.19.0
 translationstring==1.4
 urllib3==1.25.10
 venusian==3.0.0
-virtualenv==20.0.29
+virtualenv==20.0.30
 waitress==1.4.4
 webencodings==0.5.1
 webob==1.8.6
