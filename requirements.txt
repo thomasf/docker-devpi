@@ -1,19 +1,19 @@
 apipkg==1.5
 appdirs==1.4.4
 argon2-cffi==20.1.0
-attrs==20.1.0
+attrs==20.2.0
 beautifulsoup4==4.9.1
-bleach==3.1.5
+bleach==3.2.1
 certifi==2020.6.20
-cffi==1.14.2
+cffi==1.14.3
 chameleon==3.8.1
 chardet==3.0.4
 check-manifest==0.42
 cmarkgfm==0.4.2
 colorama==0.4.3; platform_system == "Windows"
 defusedxml==0.6.0
-devpi-client==5.2.0
-devpi-common==3.5.0
+devpi-client==5.2.1
+devpi-common==3.6.0
 devpi-server==5.5.0
 devpi-web==4.0.5
 distlib==0.3.1
@@ -34,7 +34,7 @@ plaster-pastedeploy==0.7
 pluggy==0.13.1
 py==1.9.0
 pycparser==2.20
-pygments==2.6.1
+pygments==2.7.1
 pyparsing==2.4.7
 pyramid==1.10.4
 pyramid-chameleon==0.3
@@ -42,13 +42,13 @@ python-dateutil==2.8.1
 readme-renderer==26.0
 repoze.lru==0.7
 requests==2.24.0
-ruamel.yaml==0.16.10
-ruamel.yaml.clib==0.2.0; platform_python_implementation == "CPython" and python_version < "3.9"
+ruamel.yaml==0.16.12
+ruamel.yaml.clib==0.2.2; platform_python_implementation == "CPython" and python_version < "3.9"
 six==1.15.0
 soupsieve==1.9.6
 strictyaml==1.1.0
 toml==0.10.1
-tox==3.19.0
+tox==3.20.0
 translationstring==1.4
 urllib3==1.25.10
 venusian==3.0.0
