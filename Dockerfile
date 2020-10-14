@@ -1,4 +1,4 @@
-from python:3.8 as builder
+from python:3.9 as builder
 copy requirements*.txt  /requirements/
 run pip wheel \
     --wheel-dir /wheel \
@@ -6,7 +6,7 @@ run pip wheel \
     -r /requirements/requirements.txt \
     -r /requirements/requirements-plugins.txt
 
-from python:3.8
+from python:3.9
 copy requirements*.txt  /requirements/
 copy --from=builder /wheel /wheel
 run python3 -m pip install \
