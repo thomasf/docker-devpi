@@ -10,7 +10,7 @@ chameleon==3.8.1
 chardet==3.0.4
 check-manifest==0.44
 cmarkgfm==0.4.2
-colorama==0.4.3; platform_system == "Windows"
+colorama==0.4.4; platform_system == "Windows"
 defusedxml==0.6.0
 devpi-client==5.2.1
 devpi-common==3.6.0
@@ -26,7 +26,7 @@ itsdangerous==1.1.0
 lazy==1.4
 packaging==20.4
 passlib==1.7.4
-pastedeploy==2.1.0
+pastedeploy==2.1.1
 pep517==0.8.2
 pkginfo==1.5.0.1
 plaster-pastedeploy==0.7
@@ -39,7 +39,7 @@ pyparsing==2.4.7
 pyramid-chameleon==0.3
 pyramid==1.10.4
 python-dateutil==2.8.1
-readme-renderer==26.0
+readme-renderer==27.0
 repoze.lru==0.7
 requests==2.24.0
 ruamel.yaml.clib==0.2.2; platform_python_implementation == "CPython" and python_version < "3.9"
@@ -48,11 +48,11 @@ six==1.15.0
 soupsieve==2.0.1; python_version >= "3.0"
 strictyaml==1.1.0
 toml==0.10.1
-tox==3.20.0
+tox==3.20.1
 translationstring==1.4
 urllib3==1.25.10
 venusian==3.0.0
-virtualenv==20.0.33
+virtualenv==20.0.34
 waitress==1.4.4
 webencodings==0.5.1
 webob==1.8.6
