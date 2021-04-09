@@ -345,7 +345,7 @@ python-versions = "*"
 
 [[package]]
 name = "docutils"
-version = "0.16"
+version = "0.17"
 description = "Docutils -- Python Documentation Utilities"
 category = "main"
 optional = false
@@ -473,14 +473,14 @@ toml = "*"
 
 [[package]]
 name = "pg8000"
-version = "1.19.0"
+version = "1.19.2"
 description = "PostgreSQL interface library"
 category = "main"
 optional = true
 python-versions = ">=3.6"
 
 [package.dependencies]
-scramp = "1.3.0"
+scramp = "1.4.0"
 
 [[package]]
 name = "pkginfo"
@@ -678,7 +678,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
 
 [[package]]
 name = "ruamel.yaml"
-version = "0.17.2"
+version = "0.17.4"
 description = "ruamel.yaml is a YAML parser/emitter that supports roundtrip preservation of comments, seq/map flow style, and map key order"
 category = "main"
 optional = false
@@ -701,7 +701,7 @@ python-versions = "*"
 
 [[package]]
 name = "scramp"
-version = "1.3.0"
+version = "1.4.0"
 description = "An implementation of the SCRAM protocol."
 category = "main"
 optional = true
@@ -1105,8 +1105,8 @@ distlib = [
     {file = "distlib-0.3.1.zip", hash = "sha256:edf6116872c863e1aa9d5bb7cb5e05a022c519a4594dc703843343a9ddd9bff1"},
 ]
 docutils = [
-    {file = "docutils-0.16-py2.py3-none-any.whl", hash = "sha256:0c5b78adfbf7762415433f5515cd5c9e762339e23369dbe8000d84a4bf4ab3af"},
-    {file = "docutils-0.16.tar.gz", hash = "sha256:c2de3a60e9e7d07be26b7f2b00ca0309c207e06c100f9cc2a94931fc75a478fc"},
+    {file = "docutils-0.17-py2.py3-none-any.whl", hash = "sha256:a71042bb7207c03d5647f280427f14bfbd1a65c9eb84f4b341d85fafb6bb4bdf"},
+    {file = "docutils-0.17.tar.gz", hash = "sha256:e2ffeea817964356ba4470efba7c2f42b6b0de0b04e66378507e3e2504bbff4c"},
 ]
 execnet = [
     {file = "execnet-1.8.0-py2.py3-none-any.whl", hash = "sha256:7a13113028b1e1cc4c6492b28098b3c6576c9dccc7973bfe47b342afadafb2ac"},
@@ -1156,8 +1156,8 @@ pep517 = [
     {file = "pep517-0.10.0.tar.gz", hash = "sha256:ac59f3f6b9726a49e15a649474539442cf76e0697e39df4869d25e68e880931b"},
 ]
 pg8000 = [
-    {file = "pg8000-1.19.0-py3-none-any.whl", hash = "sha256:046095e79f7b8414acd6f38f1b069f1d9c93ab058c7b77a9f0df6c7d586cb5fc"},
-    {file = "pg8000-1.19.0.tar.gz", hash = "sha256:11ec70c0b20ea440807e2c869940f1484eea93d71b435807b63856dd82b744dd"},
+    {file = "pg8000-1.19.2-py3-none-any.whl", hash = "sha256:53924c8d7566cc66aaf4aecb3d8128703ef4054a510602290d62e607398e8d72"},
+    {file = "pg8000-1.19.2.tar.gz", hash = "sha256:44cbb4d3c912f2da167ca02bf98a0040f7e93260e4ef114c28d5d6152012ea07"},
 ]
 pkginfo = [
     {file = "pkginfo-1.7.0-py2.py3-none-any.whl", hash = "sha256:9fdbea6495622e022cc72c2e5e1b735218e4ffb2a2a69cde2694a6c1f16afb75"},
@@ -1253,8 +1253,8 @@ requests = [
     {file = "requests-2.25.1.tar.gz", hash = "sha256:27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804"},
 ]
 "ruamel.yaml" = [
-    {file = "ruamel.yaml-0.17.2-py3-none-any.whl", hash = "sha256:0850def9ebca23b3a8c64c4b4115ebb6b364a10d49f89d289a26ee965e1e7d9d"},
-    {file = "ruamel.yaml-0.17.2.tar.gz", hash = "sha256:8f1e15421668b9edf30ed02899f5f81aff9808a4271935776f61a99a569a13da"},
+    {file = "ruamel.yaml-0.17.4-py3-none-any.whl", hash = "sha256:ac79fb25f5476e8e9ed1c53b8a2286d2c3f5dde49eb37dbcee5c7eb6a8415a22"},
+    {file = "ruamel.yaml-0.17.4.tar.gz", hash = "sha256:44bc6b54fddd45e4bc0619059196679f9e8b79c027f4131bb072e6a22f4d5e28"},
 ]
 "ruamel.yaml.clib" = [
     {file = "ruamel.yaml.clib-0.2.2-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:28116f204103cb3a108dfd37668f20abe6e3cafd0d3fd40dba126c732457b3cc"},
@@ -1281,8 +1281,8 @@ requests = [
     {file = "ruamel.yaml.clib-0.2.2.tar.gz", hash = "sha256:2d24bd98af676f4990c4d715bcdc2a60b19c56a3fb3a763164d2d8ca0e806ba7"},
 ]
 scramp = [
-    {file = "scramp-1.3.0-py3-none-any.whl", hash = "sha256:6d73eae03e7a3d647a8c36ca95dc8082fe56496db6f803b561ab231627022f82"},
-    {file = "scramp-1.3.0.tar.gz", hash = "sha256:f56208b544387b98e9d39735cc054e273d060efcdf44bb4a20935180772d1ccf"},
+    {file = "scramp-1.4.0-py3-none-any.whl", hash = "sha256:27349d6839038fe3b56c641ea2a8703df065c1d605fdee67275857c0a82122b4"},
+    {file = "scramp-1.4.0.tar.gz", hash = "sha256:d27d768408c6fc025a0e567eed84325b0aaf24364c81ea5974e8334ae3c4fda3"},
 ]
 six = [
     {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},
