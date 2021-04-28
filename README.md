@@ -237,7 +237,7 @@ devpi-web search indexing:
 Set this to anything but 0 and the container start up will dump a more detailed
 log of the start up procedure.
 
-**WEB_AUTH=0** (Since some version of devpi this does not seem to work correctly anymore, probably because devpi started using the auth header itself)
+**WEB_AUTH=0** (Since some version of devpi this does not seem to work correctly anymore, probably because devpi started using the auth header itself, you can't auth to publish packages correctly)
 
 Set this to anything but 0 to add http basic auth from htpasswd file
 `/devpi/auth/passwd`
