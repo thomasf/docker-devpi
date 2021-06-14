@@ -49,28 +49,6 @@ default values and explanation
 Set this to anything but 0 and the container start up will dump a more detailed
 log of the start up procedure and start the wsgi server in debug mode.
 
-**BASIC_AUTH_USERS_PASSWD** and **BASIC_AUTH_CI_PASSWD**
-
-On the first start up where the devpi server data is created the
-file `/devpi/auth/passwd` will be created.
-
-This files is optinally used by the web container when **WEB_AUTH=1** is set
-and `/devpi/auth` is mounted in a shared location between the containers.
-
-It enables basic authentication to create a global read only access to the
-whole devpi installation.
-
-This enables the use of index urls in the format of
-https://users:iDAMePSC@devpi.example.com/root/prod/+simple/ to be used as an
-index for pip/pipenv/... if you just want a simple way to control read only
-access to the whole server.
-
-Two basic auth users are created **users** and **ci**
-
-If **BASIC_AUTH_USERS_PASSWD** or **BASIC_AUTH_CI_PASSWD** are not set
-passwords will be generated and written to the container stdout on the initial
-start up when the server data is created.
-
 **DEVPISERVER_ROOT_PASSWD**
 
 The password for the devpi root user, if it's not set it will be generated and
@@ -236,8 +214,6 @@ devpi-web search indexing:
 
 Set this to anything but 0 and the container start up will dump a more detailed
 log of the start up procedure.
-
-**WEB_AUTH=0** (Since some version of devpi this does not seem to work correctly anymore, probably because devpi started using the auth header itself, you can't auth to publish packages correctly)
 
 Set this to anything but 0 to add http basic auth from htpasswd file
 `/devpi/auth/passwd`

@@ -28,21 +28,8 @@ if [[ ! -f ${DEVPISERVER_SERVERDIR}/.nodeinfo ]]; then
     --serverdir "${DEVPISERVER_SERVERDIR}" \
     --root-passwd "${DEVPISERVER_ROOT_PASSWD}"
   echo "new devpi server created with root password ${DEVPISERVER_ROOT_PASSWD}"
-
-  mkdir -p /devpi/auth
-  touch /devpi/auth/passwd
-
-  BASIC_AUTH_USERS_PASSWD=${BASIC_AUTH_USERS_PASSWD-$(genpasswd)}
-  devpi-http-user-set users "${BASIC_AUTH_USERS_PASSWD}"
-  echo "created user:password combination in /devpi/auth/passwd (optionally used by web container) :users:${BASIC_AUTH_USERS_PASSWD}"
-
-  BASIC_AUTH_CI_PASSWD=${BASIC_AUTH_CI_PASSWD-$(genpasswd)}
-  devpi-http-user-set ci "${BASIC_AUTH_CI_PASSWD}"
-  echo "created user:password combination in /devpi/auth/passwd (optionally used by web container) :ci:${BASIC_AUTH_CI_PASSWD}"
 fi
 
-unset BASIC_AUTH_USERS_PASSWD
-unset BASIC_AUTH_CI_PASSWD
 unset DEVPISERVER_ROOT_PASSWD
 
 exec /usr/local/bin/devpi-server ${DEBUG_ARG} "$@"

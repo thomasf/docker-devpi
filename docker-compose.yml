@@ -19,7 +19,6 @@ services:
     image: thomasf/devpi-web:latest # never use :latest for production deployments
     environment:
       # - DEBUG=1
-      - WEB_AUTH=1
       - WEB_SERVER_NAME=example.com
       - WEB_CLIENT_MAX_BODY_SIZE=200M
       - WEB_PROXY_TIMEOUT=60

@@ -1,9 +1,8 @@
-from nginx:1.19.6
+from nginx:1.20.1
 copy /nginx/etc/ /etc/nginx/
 copy /nginx/bin/ /usr/bin/
 cmd /usr/bin/nginx-start
 env DEBUG=0 \
-    WEB_AUTH=0 \
     WEB_DEVPI_LOCKDOWN=0 \
     WEB_SERVER_NAME=localhost \
     WEB_DEVPI_SERVER=devpi:3141 \

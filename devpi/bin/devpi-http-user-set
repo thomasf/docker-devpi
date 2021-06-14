@@ -1,5 +1,0 @@
-#!/bin/sh
-set -e
-mkdir -p /devpi/auth
-touch /devpi/auth/passwd
-exec htpasswd.py /devpi/auth/passwd -b "$@"
